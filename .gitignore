@@ -45,3 +45,4 @@ tests/test262/
 *.c_functions.csv
 *.c_time.txt
 *.c_variables.csv
+tis.config_*
