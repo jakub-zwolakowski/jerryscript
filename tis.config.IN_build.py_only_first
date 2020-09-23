@@ -1,0 +1,15 @@
+[
+    {
+        "address-alignment": 64,
+        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
+        "compilation_database": [
+            "build/compile_commands.json"
+        ],
+        "files": [
+            "tests/unit-core/test-abort.c",
+            "tis/stub.c"
+        ],
+        "machdep": "gcc_x86_64",
+        "name": "unit-core/test-abort.c"
+    }
+]
