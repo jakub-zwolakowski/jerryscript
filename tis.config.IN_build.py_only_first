@@ -7,7 +7,8 @@
         ],
         "files": [
             "tests/unit-core/test-abort.c",
-            "tis/stub.c"
+            "tis/stub.c",
+            "jerry-core/jcontext/jcontext.c"
         ],
         "machdep": "gcc_x86_64",
         "name": "unit-core/test-abort.c"
