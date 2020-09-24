@@ -21,3 +21,7 @@ int gettimeofday(struct timeval *tv, struct timezone *tz) {
 void srand(unsigned int seed) {
   return;
 }
+
+int rand(void) {
+  return 137;
+}
