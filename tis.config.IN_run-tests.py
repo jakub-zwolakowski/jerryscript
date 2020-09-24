@@ -1,716 +1,512 @@
 [
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-abort.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-abort.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-abort.c"
+        "name": "unit-core/test-abort.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-binary-operations-arithmetics.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-binary-operations-arithmetics.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-binary-operations-arithmetics.c"
+        "name": "unit-core/test-api-binary-operations-arithmetics.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-binary-operations-comparisons.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-binary-operations-comparisons.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-binary-operations-comparisons.c"
+        "name": "unit-core/test-api-binary-operations-comparisons.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-binary-operations-instanceof.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-binary-operations-instanceof.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-binary-operations-instanceof.c"
+        "name": "unit-core/test-api-binary-operations-instanceof.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api.c"
+        "name": "unit-core/test-api.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-errortype.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-errortype.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-errortype.c"
+        "name": "unit-core/test-api-errortype.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-functiontype.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-functiontype.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-functiontype.c"
+        "name": "unit-core/test-api-functiontype.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-iteratortype.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-iteratortype.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-iteratortype.c"
+        "name": "unit-core/test-api-iteratortype.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-objecttype.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-objecttype.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-objecttype.c"
+        "name": "unit-core/test-api-objecttype.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-promise.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-promise.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-promise.c"
+        "name": "unit-core/test-api-promise.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-property.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-property.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-property.c"
+        "name": "unit-core/test-api-property.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-set-and-clear-error-flag.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-set-and-clear-error-flag.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-set-and-clear-error-flag.c"
+        "name": "unit-core/test-api-set-and-clear-error-flag.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-strings.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-strings.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-strings.c"
+        "name": "unit-core/test-api-strings.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-api-value-type.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-api-value-type.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-api-value-type.c"
+        "name": "unit-core/test-api-value-type.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-arraybuffer.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-arraybuffer.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-arraybuffer.c"
+        "name": "unit-core/test-arraybuffer.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-backtrace.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-backtrace.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-backtrace.c"
+        "name": "unit-core/test-backtrace.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-bigint.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-bigint.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-bigint.c"
+        "name": "unit-core/test-bigint.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-container.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-container.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-container.c"
+        "name": "unit-core/test-container.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-context-data.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-context-data.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-context-data.c"
+        "name": "unit-core/test-context-data.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-dataview.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-dataview.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-dataview.c"
+        "name": "unit-core/test-dataview.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-date-helpers.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-date-helpers.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-date-helpers.c"
+        "name": "unit-core/test-date-helpers.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-exec-stop.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-exec-stop.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-exec-stop.c"
+        "name": "unit-core/test-exec-stop.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-external-string.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-external-string.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-external-string.c"
+        "name": "unit-core/test-external-string.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-has-property.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-has-property.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-has-property.c"
+        "name": "unit-core/test-has-property.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-internal-properties.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-internal-properties.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-internal-properties.c"
+        "name": "unit-core/test-internal-properties.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-jmem.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-jmem.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-jmem.c"
+        "name": "unit-core/test-jmem.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-json.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-json.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-json.c"
+        "name": "unit-core/test-json.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-lit-char-helpers.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-lit-char-helpers.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-lit-char-helpers.c"
+        "name": "unit-core/test-lit-char-helpers.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-literal-storage.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-literal-storage.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-literal-storage.c"
+        "name": "unit-core/test-literal-storage.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-mem-stats.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-mem-stats.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-mem-stats.c"
+        "name": "unit-core/test-mem-stats.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-native-callback-nested.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-native-callback-nested.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-native-callback-nested.c"
+        "name": "unit-core/test-native-callback-nested.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-native-instanceof.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-native-instanceof.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-native-instanceof.c"
+        "name": "unit-core/test-native-instanceof.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-newtarget.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-newtarget.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-newtarget.c"
+        "name": "unit-core/test-newtarget.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-number-to-int32.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-number-to-int32.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-number-to-int32.c"
+        "name": "unit-core/test-number-to-int32.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-number-to-string.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-number-to-string.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-number-to-string.c"
+        "name": "unit-core/test-number-to-string.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-objects-foreach.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-objects-foreach.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-objects-foreach.c"
+        "name": "unit-core/test-objects-foreach.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-poolman.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-poolman.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-poolman.c"
+        "name": "unit-core/test-poolman.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-promise.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-promise.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-promise.c"
+        "name": "unit-core/test-promise.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-proxy.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-proxy.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-proxy.c"
+        "name": "unit-core/test-proxy.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-regexp.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-regexp.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-regexp.c"
+        "name": "unit-core/test-regexp.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-regression-3588.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-regression-3588.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-regression-3588.c"
+        "name": "unit-core/test-regression-3588.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-resource-name.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-resource-name.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-resource-name.c"
+        "name": "unit-core/test-resource-name.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-snapshot.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-snapshot.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-snapshot.c"
+        "name": "unit-core/test-snapshot.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-stringbuilder.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-stringbuilder.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-stringbuilder.c"
+        "name": "unit-core/test-stringbuilder.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-strings.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-strings.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-strings.c"
+        "name": "unit-core/test-strings.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-string-to-number.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-string-to-number.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-string-to-number.c"
+        "name": "unit-core/test-string-to-number.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-symbol.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-symbol.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-symbol.c"
+        "name": "unit-core/test-symbol.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-to-integer.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-to-integer.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-to-integer.c"
+        "name": "unit-core/test-to-integer.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-to-length.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-to-length.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-to-length.c"
+        "name": "unit-core/test-to-length.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-typedarray.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-typedarray.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-typedarray.c"
+        "name": "unit-core/test-typedarray.c",
+        "include": [ "tis/common.config" ]
     },
     {
-        "address-alignment": 64,
-        "compilation_cmd": " -I . -I jerry-core/jmem -I jerry-core/debugger -I jerry-core/jcontext -I jerry-core/ecma/base -I jerry-core/ecma/operations -I jerry-core/ecma/builtin-objects -I jerry-core/ecma/builtin-objects/typedarray -I jerry-core/jrt -I jerry-core/lit -I jerry-core/parser/js -I jerry-core/parser/regexp -I jerry-core/api -I jerry-core/include -I jerry-core -I jerry-core/vm -I jerry-port/default/include ",
         "compilation_database": [
             "compile_commands.json"
         ],
         "files": [
-            "tests/unit-core/test-unicode.c",
-            "tis/stub.c",
-            "jerry-core/jcontext/jcontext.c"
+            "tests/unit-core/test-unicode.c"
         ],
-        "machdep": "gcc_x86_64",
-        "name": "unit-core/test-unicode.c"
+        "name": "unit-core/test-unicode.c",
+        "include": [ "tis/common.config" ]
     }
 ]
