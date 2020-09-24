@@ -46,3 +46,5 @@ tests/test262/
 *.c_time.txt
 *.c_variables.csv
 *_generated.json
+*_generated
+tis_symbols.tbl
