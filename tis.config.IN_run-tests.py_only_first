@@ -3,6 +3,6 @@
         "name": "unit-core/test-abort.c",
         "files": [ "tests/unit-core/test-abort.c" ],
         "compilation_database": [ "compile_commands.json" ],
-        "include": [ "tis/common.config" ]
+        "include": [ "trustinsoft/common.config" ]
     }
 ]
