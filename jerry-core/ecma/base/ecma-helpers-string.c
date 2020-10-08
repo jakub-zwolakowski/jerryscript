@@ -1820,11 +1820,13 @@ ecma_compare_ecma_strings (const ecma_string_t *string1_p, /**< ecma-string */
     return true;
   }
 
+#ifndef __TRUSTINSOFT_ANALYZER__
   /* Either string is direct, return with false. */
   if (ECMA_IS_DIRECT_STRING (((uintptr_t) string1_p) | ((uintptr_t) string2_p)))
   {
     return false;
   }
+#endif
 
   /* Also compares uint32 values in descriptor. */
   if (string1_p->u.hash != string2_p->u.hash)
