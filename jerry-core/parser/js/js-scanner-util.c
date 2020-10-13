@@ -524,7 +524,7 @@ scanner_pop_literal_pool (parser_context_t *context_p, /**< context */
 
   parser_list_iterator_init (&literal_pool_p->literal_pool, &literal_iterator);
 
-  const uint8_t *prev_source_p = literal_pool_p->source_p - 1;
+  const uint8_t *prev_source_p = literal_pool_p->source_p;
   size_t compressed_size = 1;
   uint32_t no_declarations = literal_pool_p->no_declarations;
 
@@ -619,7 +619,7 @@ scanner_pop_literal_pool (parser_context_t *context_p, /**< context */
 #endif /* ENABLED (JERRY_ESNEXT) */
       }
 
-      intptr_t diff = (intptr_t) (literal_p->char_p - prev_source_p);
+      intptr_t diff = (intptr_t) (literal_p->char_p - prev_source_p + 1);
 
       if (diff >= 1 && diff <= UINT8_MAX)
       {
@@ -634,7 +634,7 @@ scanner_pop_literal_pool (parser_context_t *context_p, /**< context */
         compressed_size += 2 + 1 + sizeof (const uint8_t *);
       }
 
-      prev_source_p = literal_p->char_p + literal_p->length;
+      prev_source_p = literal_p->char_p + literal_p->length + 1;
 
       if ((status_flags & SCANNER_LITERAL_POOL_FUNCTION)
 #if ENABLED (JERRY_ESNEXT)
@@ -769,7 +769,7 @@ scanner_pop_literal_pool (parser_context_t *context_p, /**< context */
     }
 
     parser_list_iterator_init (&literal_pool_p->literal_pool, &literal_iterator);
-    prev_source_p = literal_pool_p->source_p - 1;
+    prev_source_p = literal_pool_p->source_p;
     no_declarations = literal_pool_p->no_declarations;
 
     while ((literal_p = (lexer_lit_location_t *) parser_list_iterator_next (&literal_iterator)) != NULL)
@@ -882,7 +882,7 @@ scanner_pop_literal_pool (parser_context_t *context_p, /**< context */
       data_p[1] = (uint8_t) literal_p->length;
       data_p += 3;
 
-      intptr_t diff = (intptr_t) (literal_p->char_p - prev_source_p);
+      intptr_t diff = (intptr_t) (literal_p->char_p - prev_source_p + 1);
 
       if (diff >= 1 && diff <= UINT8_MAX)
       {
@@ -907,7 +907,7 @@ scanner_pop_literal_pool (parser_context_t *context_p, /**< context */
         data_p += sizeof (const uint8_t *);
       }
 
-      prev_source_p = literal_p->char_p + literal_p->length;
+      prev_source_p = literal_p->char_p + literal_p->length + 1;
     }
 
     data_p[0] = SCANNER_STREAM_TYPE_END;
