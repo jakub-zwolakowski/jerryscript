@@ -215,7 +215,15 @@ lit_is_utf8_string_magic (const lit_utf8_byte_t *string_p, /**< utf-8 string */
   while (first < last)
   {
     lit_utf8_size_t middle = ((first + last) / 2); /**< mid point of search */
-    int compare = memcmp (lit_get_magic_string_utf8 ((lit_magic_string_id_t) middle), string_p, string_size);
+    int compare;
+    if (string_p == NULL && string_size == 0)
+    {
+      compare = string_p;
+    }
+    else
+    {
+      compare = memcmp (lit_get_magic_string_utf8 ((lit_magic_string_id_t) middle), string_p, string_size);
+    }
 
     if (compare == 0)
     {
