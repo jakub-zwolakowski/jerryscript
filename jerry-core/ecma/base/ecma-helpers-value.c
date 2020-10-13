@@ -13,6 +13,8 @@
  * limitations under the License.
  */
 
+#include <math.h>
+
 #include "ecma-alloc.h"
 #include "ecma-exceptions.h"
 #include "ecma-gc.h"
@@ -578,6 +580,9 @@ ecma_make_length_value (ecma_length_t number) /**< number to be encoded */
 ecma_value_t
 ecma_make_number_value (ecma_number_t ecma_number) /**< number to be encoded */
 {
+  if(!isfinite(ecma_number) || isnan(ecma_number))
+    return ecma_create_float_number (ecma_number);
+
   ecma_integer_value_t integer_value = (ecma_integer_value_t) ecma_number;
 
   if ((ecma_number_t) integer_value == ecma_number
