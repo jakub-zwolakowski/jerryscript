@@ -39,3 +39,13 @@ docs/doxygen
 # Tests
 tests/test262/
 .vs
+
+# TIS-CI
+*.c_config.json
+*.c_functions.csv
+*.c_time.txt
+*.c_variables.csv
+*_generated.json
+*_generated
+tis.config.IN_*
+tis_symbols.tbl
