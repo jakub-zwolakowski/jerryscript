@@ -2214,9 +2214,15 @@ parser_parse_source (const uint8_t *arg_list_p, /**< function argument list */
   }
 #endif /* ENABLED (JERRY_PARSER_DUMP_BYTE_CODE) */
 
+  uint8_t *arg_list_end_p;
+  if (arg_list_p == NULL && arg_list_size == 0)
+    arg_list_end_p = NULL;
+  else
+    arg_list_end_p = arg_list_p + arg_list_size;
+
   scanner_scan_all (&context,
                     arg_list_p,
-                    arg_list_p + arg_list_size,
+                    arg_list_end_p,
                     source_p,
                     source_p + source_size);
 
