@@ -202,7 +202,7 @@ scanner_insert_info (parser_context_t *context_p, /**< context */
 
   new_scanner_info_p->source_p = source_p;
 
-  while (source_p < scanner_info_p->source_p)
+  while (scanner_info_p->source_p != NULL && source_p < scanner_info_p->source_p)
   {
     prev_scanner_info_p = scanner_info_p;
     scanner_info_p = scanner_info_p->next_p;
