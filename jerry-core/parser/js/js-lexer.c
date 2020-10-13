@@ -2529,7 +2529,7 @@ lexer_construct_literal_object (parser_context_t *context_p, /**< context */
         parser_scope_stack_t *scope_stack_start_p = context_p->scope_stack_p;
         parser_scope_stack_t *scope_stack_p = scope_stack_start_p + context_p->scope_stack_top;
 
-        while (scope_stack_p > scope_stack_start_p)
+        while (scope_stack_p != scope_stack_start_p && scope_stack_p > scope_stack_start_p)
         {
           scope_stack_p--;
 
