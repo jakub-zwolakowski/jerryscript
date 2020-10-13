@@ -19,6 +19,20 @@
 
 #include "test-common.h"
 
+#ifdef __TRUSTINSOFT_ANALYZER__
+
+/* Iterations count. */
+#define test_iters (32)
+
+/* Sub iterations count. */
+#define test_subiters (4)
+
+/* Max bytes in string. */
+#define max_bytes_in_string (65 * 32)
+#define max_code_units_in_string (max_bytes_in_string)
+
+#else
+
 /* Iterations count. */
 #define test_iters (1024)
 
@@ -28,6 +42,8 @@
 /* Max bytes in string. */
 #define max_bytes_in_string (65 * 1024)
 #define max_code_units_in_string (max_bytes_in_string)
+
+#endif
 
 typedef enum
 {
