@@ -1821,7 +1821,11 @@ ecma_compare_ecma_strings (const ecma_string_t *string1_p, /**< ecma-string */
   }
 
   /* Either string is direct, return with false. */
+#ifdef __TRUSTINSOFT_ANALYZER__ /* Temporary workaround due tu a missing feature in TIS CI. */
+  if (ECMA_IS_DIRECT_STRING ((uintptr_t) string1_p) || ECMA_IS_DIRECT_STRING ((uintptr_t) string2_p))
+#else
   if (ECMA_IS_DIRECT_STRING (((uintptr_t) string1_p) | ((uintptr_t) string2_p)))
+#endif
   {
     return false;
   }

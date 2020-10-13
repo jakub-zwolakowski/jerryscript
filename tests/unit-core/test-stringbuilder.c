@@ -28,6 +28,7 @@ main (void)
   jmem_init ();
   ecma_init ();
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 1)
   {
     static const lit_utf8_byte_t string_data[] = "A simple string";
 
@@ -40,7 +41,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 2)
   {
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     ecma_stringbuilder_append_magic (&builder, LIT_MAGIC_STRING_STRING);
@@ -49,7 +52,9 @@ main (void)
     ecma_string_t *str_p = ecma_get_magic_string (LIT_MAGIC_STRING_STRING);
     TEST_ASSERT (ecma_compare_ecma_strings (result_p, str_p));
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 3)
   {
     static const lit_utf8_byte_t string_data[] = "a";
 
@@ -62,7 +67,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 4)
   {
     static const lit_utf8_byte_t string_data[] = "A simple string";
     ecma_string_t *str_p = ecma_new_ecma_string_from_utf8 (string_data, sizeof (string_data) - 1);
@@ -75,7 +82,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 5)
   {
     ecma_string_t *str_p = ecma_get_magic_string (LIT_MAGIC_STRING__EMPTY);
 
@@ -84,7 +93,9 @@ main (void)
 
     TEST_ASSERT (ecma_compare_ecma_strings (result_p, str_p));
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 6)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
 
@@ -99,7 +110,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 7)
   {
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     ecma_stringbuilder_append_char (&builder, LIT_CHAR_1);
@@ -112,7 +125,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 8)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -130,7 +145,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 9)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -143,10 +160,16 @@ main (void)
     /* Test that we do not leak. */
     ecma_stringbuilder_destroy (&builder);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 10)
   {
     static const lit_utf8_byte_t string_data[] = "abcdefghijklmnop";
+  #ifdef __TRUSTINSOFT_ANALYZER__
+    const size_t count = ((UINT16_MAX / (sizeof (string_data) - 1)) / 8) + 1;
+  #else
     const size_t count = UINT16_MAX / (sizeof (string_data) - 1) + 1;
+  #endif
 
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     for (size_t i = 0; i < count; i++)
@@ -168,7 +191,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (expected_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 11)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -190,7 +215,9 @@ main (void)
     ecma_deref_ecma_string (str_p);
     ecma_deref_ecma_string (another_string);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 12)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -206,7 +233,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 13)
   {
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     ecma_string_t *result_p = ecma_stringbuilder_finalize (&builder);
@@ -216,7 +245,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 14)
   {
     ecma_string_t *str_p = ecma_get_magic_string (LIT_MAGIC_STRING__EMPTY);
     ecma_stringbuilder_t builder = ecma_stringbuilder_create_from (str_p);
@@ -226,7 +257,9 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 15)
   {
     ecma_string_t *str_p = ecma_get_magic_string (LIT_MAGIC_STRING_STRING);
     ecma_stringbuilder_t builder = ecma_stringbuilder_create_from (str_p);
@@ -236,6 +269,7 @@ main (void)
     ecma_deref_ecma_string (result_p);
     ecma_deref_ecma_string (str_p);
   }
+#endif
 
   ecma_finalize ();
   jmem_finalize ();

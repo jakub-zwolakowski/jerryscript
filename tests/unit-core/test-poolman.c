@@ -32,8 +32,13 @@
 const uint32_t test_iters = 1024;
 
 /* Subiterations count. */
+#ifdef __TRUSTINSOFT_ANALYZER__
+#define TEST_MAX_SUB_ITERS  32
+#define TEST_CHUNK_SIZE 4
+#else
 #define TEST_MAX_SUB_ITERS  1024
 #define TEST_CHUNK_SIZE 8
+#endif
 
 uint8_t *ptrs[TEST_MAX_SUB_ITERS];
 uint8_t data[TEST_MAX_SUB_ITERS][TEST_CHUNK_SIZE];
