@@ -668,7 +668,9 @@ ecma_utf8_string_to_number (const lit_utf8_byte_t *str_p, /**< utf-8 string */
     /* Normalizing mantissa */
     shift = 4 - ECMA_UINT128_CLZ_MAX4 (fraction_uint128);
     JERRY_ASSERT (shift >= 0);
-    ECMA_UINT128_RIGHT_SHIFT_MAX63 (fraction_uint128, shift);
+    if(0 < shift && shift < 64) {
+      ECMA_UINT128_RIGHT_SHIFT_MAX63 (fraction_uint128, shift);
+    }
     binary_exponent += shift;
 
     JERRY_ASSERT (ECMA_UINT128_CLZ_MAX63 (fraction_uint128) == 4);
