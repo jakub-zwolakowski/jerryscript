@@ -28,7 +28,7 @@ main (void)
   jmem_init ();
   ecma_init ();
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 1)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 1)
   {
     static const lit_utf8_byte_t string_data[] = "A simple string";
 
@@ -43,7 +43,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 2)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 2)
   {
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     ecma_stringbuilder_append_magic (&builder, LIT_MAGIC_STRING_STRING);
@@ -54,7 +54,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 3)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 3)
   {
     static const lit_utf8_byte_t string_data[] = "a";
 
@@ -69,7 +69,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 4)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 4)
   {
     static const lit_utf8_byte_t string_data[] = "A simple string";
     ecma_string_t *str_p = ecma_new_ecma_string_from_utf8 (string_data, sizeof (string_data) - 1);
@@ -84,7 +84,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 5)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 5)
   {
     ecma_string_t *str_p = ecma_get_magic_string (LIT_MAGIC_STRING__EMPTY);
 
@@ -95,7 +95,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 6)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 6)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
 
@@ -112,7 +112,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 7)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 7)
   {
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     ecma_stringbuilder_append_char (&builder, LIT_CHAR_1);
@@ -127,7 +127,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 8)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 8)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -147,7 +147,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 9)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 9)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -162,10 +162,14 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 10)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 10)
   {
     static const lit_utf8_byte_t string_data[] = "abcdefghijklmnop";
+  #ifdef __TRUSTINSOFT_ANALYZER__
+    const size_t count = ((UINT16_MAX / (sizeof (string_data) - 1)) / 8) + 1;
+  #else
     const size_t count = UINT16_MAX / (sizeof (string_data) - 1) + 1;
+  #endif
 
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     for (size_t i = 0; i < count; i++)
@@ -189,7 +193,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 11)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 11)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -213,7 +217,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 12)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 12)
   {
     static const lit_utf8_byte_t string_data[] = "abc";
     ecma_string_t *uint_str_p = ecma_new_ecma_string_from_uint32 (234);
@@ -231,7 +235,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 13)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 13)
   {
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     ecma_string_t *result_p = ecma_stringbuilder_finalize (&builder);
@@ -243,7 +247,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 14)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 14)
   {
     ecma_string_t *str_p = ecma_get_magic_string (LIT_MAGIC_STRING__EMPTY);
     ecma_stringbuilder_t builder = ecma_stringbuilder_create_from (str_p);
@@ -255,7 +259,7 @@ main (void)
   }
 #endif
 
-#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 15)
+#if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TIS_STRINGBUILDER_CASE) && TIS_STRINGBUILDER_CASE == 15)
   {
     ecma_string_t *str_p = ecma_get_magic_string (LIT_MAGIC_STRING_STRING);
     ecma_stringbuilder_t builder = ecma_stringbuilder_create_from (str_p);
