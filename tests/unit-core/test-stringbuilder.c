@@ -165,7 +165,11 @@ main (void)
 #if !defined(__TRUSTINSOFT_ANALYZER__) || (defined(TRUSTINSOFT_STRINGBUILDER_TEST_CASE) && TRUSTINSOFT_STRINGBUILDER_TEST_CASE == 10)
   {
     static const lit_utf8_byte_t string_data[] = "abcdefghijklmnop";
+  #ifdef __TRUSTINSOFT_ANALYZER__
+    const size_t count = ((UINT16_MAX / (sizeof (string_data) - 1)) / 8) + 1;
+  #else
     const size_t count = UINT16_MAX / (sizeof (string_data) - 1) + 1;
+  #endif
 
     ecma_stringbuilder_t builder = ecma_stringbuilder_create ();
     for (size_t i = 0; i < count; i++)
