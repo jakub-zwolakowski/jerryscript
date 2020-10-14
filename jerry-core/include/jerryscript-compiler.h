@@ -168,10 +168,6 @@ void * __cdecl _alloca (size_t _Size);
 /**
  * Helper to declare (or mimic) a C99 variable-length array.
  */
-#if !defined(JERRY_VLA) && defined(__TRUSTINSOFT_ANALYZER__)
-#include <stdlib.h>
-#define JERRY_VLA(type, name, size) type *name = (type *) (malloc (sizeof (type) * size))
-#endif
 #ifndef JERRY_VLA
 #define JERRY_VLA(type, name, size) type name[size]
 #endif /* !JERRY_VLA */
