@@ -1,7 +1,4 @@
 
-#include <stdlib.h>
-#define JERRY_VLA(type, name, size) type *name = (type *) (malloc (sizeof (type) * size))
-
 #include <sys/time.h>
 
 #define __CURRENT_TIME 1466335969L
